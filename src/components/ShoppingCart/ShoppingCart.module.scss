@@ -1,0 +1,50 @@
+.ShoppingCart {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  margin-left: 60rem;
+  height: 500px;
+  width: 700px;
+  border: 1px solid grey;
+  border-radius: 20px;
+  background-color: silver;
+
+  h1 {
+    height: fit-content;
+  }
+
+  &__itemSummary {
+    display: flex;
+    justify-content: space-between;
+
+    h3 {
+      justify-content: flex-start;
+      width: fit-content;
+      margin-left: 20px;
+    }
+
+    /* h4 {
+    //   width: fit-content;
+    //   justify-content: flex-start;
+    } */
+
+    p {
+      width: fit-content;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .plus {
+    margin-right: 20px;
+    height: 25px;
+    width: auto;
+  }
+
+  .minus {
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 25px;
+    width: auto;
+  }
+}

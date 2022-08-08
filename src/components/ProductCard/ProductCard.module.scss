@@ -1,0 +1,19 @@
+.ProductCard {
+  border: 1px solid silver;
+  width: 300px;
+  height: 700px;
+  margin: 40px 10px;
+
+  &__img {
+    width: 100%;
+  }
+
+  &__name {
+    margin: 6px;
+    font-size: 25px;
+  }
+
+  &__price {
+    margin: 0 10px;
+  }
+}

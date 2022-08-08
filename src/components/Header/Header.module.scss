@@ -1,0 +1,45 @@
+.Header {
+  display: flex;
+  border-bottom: 2px outset grey;
+  background-color: black;
+
+  &__Home {
+    text-decoration: none;
+  }
+
+  &__Cart {
+    text-decoration: none;
+  }
+
+  .bagIcon {
+    display: flex;
+    justify-content: flex-end;
+    width: 30px;
+    height: 30px;
+    margin-top: 25px;
+    margin-left: 15px;
+    color: white;
+  }
+
+  .shoppingCart {
+    display: flex;
+    justify-content: flex-end;
+    width: 30px;
+    height: 30px;
+    margin-top: 30px;
+    color: white;
+  }
+
+  h1 {
+    margin: 17px 10px;
+    margin-left: 30px;
+    color: white;
+  }
+
+  h3 {
+    margin: 25px 20px 20px 20px;
+    font-weight: 400;
+    font-size: 25px;
+    color: white;
+  }
+}
