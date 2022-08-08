@@ -5,6 +5,7 @@ import { useParams } from "react-router";
 import { useState, useEffect } from "react";
 import { IoChevronBack } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import ProductInput from "../ProductInput/ProductInput";
 
 const ProductPage = () => {
   const { id } = useParams();
@@ -55,22 +56,13 @@ const ProductPage = () => {
             <h4 className={styles.ProductPage__item_name}>{product.name}</h4>
             <h3 className={styles.ProductPage__item_price}>${product.price}</h3>
           </header>
-          {/* Size selection here */}
-          <h3 className={styles.ProductPage__item_size}>Select your size:</h3>
-          <div className={styles.ProductPage__sizeButton}>
-            <button>xss</button>
-            <button>xs</button>
-            <button>s</button>
-            <button>m</button>
-            <button>l</button>
-            <button>xl</button>
-            <button>xxl</button>
-          </div>
+          <section class={styles.ProductPage__size}>
+            <ProductInput product={product} id={id} />
+          </section>
           <section className={styles.ProductPage__item_info}>
             <h5>Description: </h5>
             <p>{product.description}</p>
           </section>
-          <button>Add to Cart!</button>
         </article>
       </div>
     </div>

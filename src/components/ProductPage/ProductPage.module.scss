@@ -1,11 +1,15 @@
 .ProductPage {
+  display: flex;
+  height: 100vh;
+
   .backIcon {
     display: flex;
     height: 50px;
     width: auto;
-    margin: 30px;
+    margin-top: 10rem;
     margin-left: 60px;
     color: black;
+    position: fixed;
   }
 
   &__carousel {
@@ -13,6 +17,7 @@
     justify-content: center;
     border: 2px solid black;
     width: 400px;
+    height: 600px;
     margin-left: 67rem;
     margin-top: 7rem;
 
@@ -27,15 +32,15 @@
   }
 
   &__item_description {
-    margin-left: 73rem;
-    margin-top: 2.5rem;
+    margin-left: 7rem;
+    margin-top: 7rem;
     width: 200px;
     height: auto;
     text-align: left;
     margin-bottom: 30px;
   }
 
-  &__sizeButton {
+  &__size {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;

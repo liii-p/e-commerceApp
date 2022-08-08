@@ -1,7 +1,7 @@
 import React from "react";
 import ProductCard from "../ProductCard/ProductCard";
 import styles from "./MainPage.module.scss";
-import FeaturedCarousel from "../Carousel/Carousel";
+import FeaturedCarousel from "../../services/Carousel/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from "../Footer/Footer";
 import { Link } from "react-router-dom";
@@ -26,7 +26,6 @@ const MainPage = ({ products }) => {
       <div className={styles.MainPage__products}>
         {products.map((singleProduct) => {
           const id = singleProduct.id;
-          console.log(id);
           return (
             <Link to={`/${id}`} key={id}>
               <ProductCard products={singleProduct} />

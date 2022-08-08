@@ -51,3 +51,13 @@ export const getProductById = async (id) => {
 
   return data;
 };
+
+// GETTING STOCK FROM DATABASE BY ID
+
+export const getStockLevel = async (id) => {
+  const info = await getProductById(id);
+  console.log("in server, this is info: ", info);
+  const stockLevel = await info.stock;
+  console.log("stock level:", stockLevel);
+  return stockLevel;
+};

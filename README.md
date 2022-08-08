@@ -43,3 +43,7 @@ Using Firestore and react create, a cart system. Create a cart page in your reac
 TIPS :
 
 - Make sure your site is scoped to one category of products
+
+TO DO:
+
+- Wishlist

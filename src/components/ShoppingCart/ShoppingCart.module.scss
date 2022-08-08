@@ -1,8 +1,17 @@
+.backIcon {
+  display: flex;
+  height: 50px;
+  width: auto;
+  margin: 70px 0 30px 60px;
+  color: black;
+}
+
 .ShoppingCart {
   display: flex;
+  height: 100vh;
   flex-direction: column;
-  margin-top: 60px;
-  margin-left: 60rem;
+  margin-top: 90px;
+  margin-left: 50rem;
   height: 500px;
   width: 700px;
   border: 1px solid grey;
