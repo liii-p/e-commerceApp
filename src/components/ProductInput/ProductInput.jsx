@@ -80,6 +80,7 @@ const ProductInput = ({ product }) => {
     } else copyOf.push(newItem);
 
     console.log("copy of", copyOf);
+    alert("Added to cart!");
     setCart(copyOf);
   };
 

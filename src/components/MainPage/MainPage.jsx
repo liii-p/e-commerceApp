@@ -5,6 +5,7 @@ import FeaturedCarousel from "../../services/Carousel/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from "../Footer/Footer";
 import { Link } from "react-router-dom";
+import { Carousel } from "react-bootstrap";
 
 const MainPage = ({ products }) => {
   return (
@@ -13,7 +14,9 @@ const MainPage = ({ products }) => {
         <h2>FEATURED PRODUCTS</h2>
       </div>
       <div className={styles.MainPage__carousel}>
-        <FeaturedCarousel />
+        <Link to={`/${products.id}`}>
+          <FeaturedCarousel products={products} />
+        </Link>
         <div className={styles.para}>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus

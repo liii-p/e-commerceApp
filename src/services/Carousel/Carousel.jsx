@@ -6,14 +6,14 @@ import aviatorJacket from "../../images/aviator-jacket.jpg";
 import skaterJean from "../../images/skater-jean.jpg";
 import styles from "./Carousel.module.scss";
 
-const FeaturedCarousel = () => {
+const FeaturedCarousel = ({ products }) => {
   return (
     <Carousel className={styles.Carousel}>
       <Carousel.Item className={styles.Carousel}>
         <img className="d-block" src={meshTop} alt="First slide" />
         <Carousel.Caption>
-          <h3>Mesh Top</h3>
-          <h4>$35</h4>
+          <h3>{products.name}</h3>
+          <h4>{products.price}</h4>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item className={styles.Carousel}>

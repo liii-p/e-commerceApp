@@ -56,7 +56,7 @@ const ProductPage = () => {
             <h4 className={styles.ProductPage__item_name}>{product.name}</h4>
             <h3 className={styles.ProductPage__item_price}>${product.price}</h3>
           </header>
-          <section class={styles.ProductPage__size}>
+          <section className={styles.ProductPage__size}>
             <ProductInput product={product} id={id} />
           </section>
           <section className={styles.ProductPage__item_info}>
