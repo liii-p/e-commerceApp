@@ -36,6 +36,7 @@ const ProductPage = () => {
       <Link to={`/`}>
         <IoChevronBack className={styles.backIcon} />
       </Link>
+      {/* <section className={styles.ProductPage__product}> */}
       <Carousel className={styles.ProductPage__carousel}>
         {images.map((img, index) => {
           return (
@@ -65,6 +66,7 @@ const ProductPage = () => {
           </section>
         </article>
       </div>
+      {/* </section> */}
     </div>
   );
 };

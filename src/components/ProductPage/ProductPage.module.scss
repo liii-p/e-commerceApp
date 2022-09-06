@@ -1,6 +1,9 @@
 .ProductPage {
   display: flex;
   height: 100vh;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
 
   .backIcon {
     display: flex;
@@ -18,13 +21,17 @@
     border: 2px solid black;
     width: 400px;
     height: 600px;
-    margin-left: 67rem;
-    margin-top: 7rem;
+    margin: auto;
 
     img {
       height: 600px;
       width: auto;
     }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
   }
 
   &__item_price {
@@ -33,7 +40,6 @@
 
   &__item_description {
     margin-left: 7rem;
-    margin-top: 7rem;
     width: 200px;
     height: auto;
     text-align: left;
