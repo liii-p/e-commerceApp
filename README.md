@@ -1,5 +1,9 @@
 # React e-Shop Website
 
+## PLEASE NOTE
+
+The app will not be functional as the firestore database is no longer accessible.
+
 ## Outline
 
 This project is designed to reinforce your React learnings and make sure that you are comfortable with most aspect of the framework. With this project you will practice how to:
